@@ -17,7 +17,7 @@ const fs = require('fs');
 
 	// 配列だから要素を取得してくる
 	await paragraph.forEach((el) => {
-		// それをテキストファイルに追記だ！！　+ '\n'にしないと改行が入らない
+		// それをテキストファイルに追記　+ '\n'にしないと改行が入らない
 		fs.appendFile('./test.txt', el + '\n', (err) => {
 			if (err) throw err;
 		});
@@ -32,7 +32,7 @@ const fs = require('fs');
 
 	// 配列だから要素を取得してくる
 	await paragraph02.forEach((el) => {
-		// それをテキストファイルに追記だ！！　+ '\n'にしないと改行が入らない
+		// それをテキストファイルに追記　+ '\n'にしないと改行が入らない
 		fs.appendFile('./test.txt', el + '\n', (err) => {
 			if (err) throw err;
 		});
